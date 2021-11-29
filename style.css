@@ -3339,7 +3339,7 @@ h4:last-of-type + .ex {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  width: 100%;
 }
 
 .dialogue .footer, .card .footer {
@@ -3545,6 +3545,11 @@ code p {
   align-items: center;
 }
 
+.uispacer.mobile .btn {
+  width: 100%;
+  max-width: 375px;
+}
+
 .tabset.horizontal label {
   display: flex;
   padding: 9px 21px;
@@ -3563,7 +3568,8 @@ code p {
 .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
 .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
 .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
-.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6)
+ {
   display: block;
 }
 
