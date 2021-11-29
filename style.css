@@ -35,10 +35,16 @@ figcaption {
 .toggle label {
   color: #292929;
   background: white;
-  font-size: 1rem;
+  font-size: 0.889rem;
   text-align: center;
   padding: 12px 21px;
+  line-height: 1.6;
   transition: all 0.1s ease-in-out;
+}
+
+.toggle.small label {
+  padding: 9px 15px;
+  font-size: 0.79rem;
 }
 
 .toggle label:hover {
@@ -220,7 +226,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.uispacer.mobile .card, .uispacer.mobile .dd-menu-drawer, .uispacer.mobile .dd-tooltip-drawer {
+.uispacer.mobile .card, .uispacer.mobile .dd-menu-drawer, .uispacer.mobile .dd-tooltip-drawer, .uispacer.mobile .well {
   width: 375px;
 }
 
@@ -1815,7 +1821,7 @@ nav.topnav path {
   border: 1px solid #D8D8D8;
 }
 
-.card .body, .dialogue .body {
+.card .body, .dialogue .body, .well .body {
   padding: 30px;
   width: 100%;
 }
@@ -1852,22 +1858,46 @@ nav.topnav path {
     transform: translate3d(0, 0, 0);
 }
 
-.picton .card.outlined {
+.picton .well {
   color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
-.picton .card.outlined .body > * {
+.picton .well .body > * {
   color: #FFFFFF;
 }
 
-.card.outlined {
-  color: #292929;
-  border-color: #292929;
-  background: none !important;
+.well-group {
+  width: 100%;
+  border: 1px solid #292929;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
-.card.outlined .body > * {
+.well-group > div {
+  padding: 30px;
+  width: 100%;
+}
+
+.well-group > div:first-of-type, .well-group > div:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 1px solid #292929;
+}
+
+.well {
+  color: #292929;
+  background: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 6px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #292929;
+}
+
+.well .body > * {
   color: #292929;
 }
 
@@ -2441,16 +2471,11 @@ textarea:not(:last-of-type) {
 
 table {
   width: 100%;
-  border-collapse: separate;
   border-spacing: 0;
   text-align: left;
   overflow: hidden;
   font-size: 0.889rem;
   background: white;
-}
-
-thead {
-    border-bottom: 2px solid lime;
 }
 
 h4 + table, h3 + table, h5 + table {
@@ -2473,11 +2498,7 @@ h4 + table, h3 + table, h5 + table {
 }
 
 tr {
-    border-bottom: 1px solid lime;
-}
-
-thead {
-  border-bottom: 2px solid orange;
+    border-bottom: 1px solid #292929;
 }
 
 thead > tr > th {
