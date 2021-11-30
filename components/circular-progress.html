@@ -4,7 +4,7 @@
    <head>
       <link rel="stylesheet" href="../style.css">
       <meta charSet="utf-8" />
-      <title>Move by AnyVan | Components | Progress indicator</title>
+      <title>Move by AnyVan | Components | Circular progress indicator</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
@@ -37,7 +37,7 @@
                            <a tabindex="0" href="cards.html" rel="noopener">Cards</a>
                            <a tabindex="0" href="counters.html" rel="noopener">Counters</a>
                            <a tabindex="0" href="fab.html" rel="noopener">FAB</a>
-                           <a tabindex="0" aria-current="page" href="lozenges.html" rel="noopener">Progress indicator</a>
+                           <a tabindex="0" aria-current="page" href="lozenges.html" rel="noopener">Circular progress indicator</a>
                            <a tabindex="0" href="lozenges.html" rel="noopener"> Lozenges</a>
                            <a tabindex="0" href="pills.html" rel="noopener">Pills</a>
                            <a href="overlay.html" rel="noopener">Overlay</a>
@@ -50,7 +50,7 @@
                            <div class="ub-dspl_flex ub-w_100prcnt ub-just-cnt_space-between ub-mb_32px ub-box-szg_border-box">
                               <div class="ub-box-szg_border-box">
                                  <div class="lozenge lozenge-s picton">Data</div>
-                                 <h1>Progress indicator</h1>
+                                 <h1>Circular progress indicator</h1>
                                  <p>Enables incremental changes of a counter, within a form</p>
                               </div>
                            </div>
@@ -61,66 +61,43 @@
                               <label for="tab1">Overview</label>
                               
                               <input type="radio" name="tabset" id="tab2" aria-controls="variation">
-                              <label for="tab2">Variations</label>
+                              <label for="tab2">Data</label>
 
                               <input type="radio" name="tabset" id="tab3" aria-controls="sizing">
                               <label for="tab3">Sizing</label>
 
                               <div class="tab-panels">
                                  <section id="overview" class="tab-panel">
-                                    <p>Progress indicator let users know progress on their action in the UI is being made. Progress indicator also prevent users from giving up on an experience, especially after user input, and prevent repeated actions</p>
+                                    <p>Circular progress indicator let users know progress on their action in the UI is being made. Circular progress indicator also prevent users from giving up on an experience, especially after user input, and prevent repeated actions</p>
                                     <figure>
                                        <div class="inner alabaster">
                                           <div class="uispacer">
-                                             <div class="loader loader-m">
-                                                <svg viewBox="0 0 40 40" class="Loading__StyledSpinner-sc-199xidk-2 iaXxoU">
-                                                   <circle cx="50%" cy="50%" r="18"></circle>
-                                                </svg>
-                                             </div>
+                                             <div class="progress-circle" data-progress="10"></div>
                                           </div>
                                        </div>
                                     </figure>
                                  </section>
-                                 <section id="variations" class="tab-panel">
-                                    <section>
-                                       <h4>Circular</h4>
-                                       <figure>
-                                          <div class="inner alabaster">
-                                             <div class="uispacer">
-                                                <div class="progress-circle" data-progress="10"></div>
-                                             </div>
-                                          </div>
-                                       </figure>
-                                       <h5>Data</h5>
-                                       <table>
-                                          <thead>
-                                             <tr>
-                                                <th>Progress</th>
-                                                <th>Colour</th>
-                                             </tr>
-                                          </thead>
+                                 <section id="data" class="tab-panel">
+                                    <table>
+                                       <thead>
                                           <tr>
-                                             <td>< 50%</td>
-                                             <td><span class="lozenge lozenge-s carnation">Carnation</span></td>
+                                             <th>Progress</th>
+                                             <th>Colour</th>
                                           </tr>
-                                          <tr>
-                                             <td>50% - 70%</td>
-                                             <td><span class="lozenge lozenge-s carrot">Carrot</span></td>
-                                          </tr>
-                                          <tr>
-                                             <td>> 70%</td>
-                                             <td><span class="lozenge lozenge-s lima">Lima</span></td>
-                                          </tr>
-                                       </table>
-                                    </section>
-                                 </section>
-                                 <section id="sizing" class="tab-panel">
-                                    <section>
-                                    
-                                    </section>
-                                    <section>
-                                    
-                                    </section>
+                                       </thead>
+                                       <tr>
+                                          <td>< 50%</td>
+                                          <td><span class="lozenge lozenge-s carnation">Carnation</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td>50% - 70%</td>
+                                          <td><span class="lozenge lozenge-s carrot">Carrot</span></td>
+                                       </tr>
+                                       <tr>
+                                          <td>> 70%</td>
+                                          <td><span class="lozenge lozenge-s lima">Lima</span></td>
+                                       </tr>
+                                    </table>
                                  </section>
                               </div>
                            </div>
