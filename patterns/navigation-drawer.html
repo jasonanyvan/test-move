@@ -1,216 +1,190 @@
 <!DOCTYPE html>
 <html>
-   
-   
-   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-   
-   <head>
-      <link rel="stylesheet" href="../style.css">
-      <meta charSet="utf-8" />
-      <title>AnyVan Avatar Documentation</title>
-      
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      
-      
-      
-      
-      
-      <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
-   </head>
-   <body>
-      <div id="__next">
-         <div>
-            <div class="ub-w_100vw ub-dspl_flex ub-flx-drct_column ub-min-h_100vh ub-box-szg_border-box">
-               <nav class="nav-main-system">
-                  <div class="logo-box-main"><img class="ub-w_100px ub-h_24px ub-crsr_pointer ub-box-szg_border-box" src="../image/AnyVan-move.svg" /></div>
-                  <div class="primary-nav-system"><a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box"
-                     href="../index.html" rel="noopener">Home</a><a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box"
-                     href="../foundations.html" rel="noopener">Foundations</a>
-
-                     <a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box"
-                     href="../components.html" rel="noopener">Components</a>
-
-
-                     <a class="css-b61p4k    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_3366FF ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box"
-                     href="../patterns.html" rel="noopener">Patterns</a>
-
-                     <a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box"
-                     href="../resources.html" rel="noopener">Resources</a></div>
-               </nav>
-               <div class="ub-flx_1 ub-h_100prcnt ub-box-szg_border-box">
-                  <div class="ub-w_100prcnt ub-dspl_grid ub-grd-tmp-col_1c86bs ub-box-szg_border-box">
-                     <div class="sidebar-nav">
-                            <h2>Patterns</h2>
-                            <div role="tablist" class="ub-box-szg_border-box">
-                                <a tabindex="0" href="primary-nav.html" rel="noopener">Primary navigation</a>
-                                <a aria-current="page" tabindex="0" href="navigation-rail.html" rel="noopener">Navigation rail</a>
-                            </div>
-                        </div>
-                     <div class="ub-w_100prcnt ub-dspl_flex ub-flx-drct_column ub-just-cnt_flex-start ub-pb_40px ub-pl_40px ub-pr_40px ub-pt_40px ub-max-w_1200px ub-box-szg_border-box">
-                        <div class="ub-dspl_flex ub-w_100prcnt ub-just-cnt_space-between ub-flx-drct_column ub-algn-itms_flex-start ub-box-szg_border-box">
-                           <div class="ub-dspl_flex ub-w_100prcnt ub-just-cnt_space-between ub-mb_32px ub-box-szg_border-box">
-                              <div class="ub-box-szg_border-box">
-                                 <div class="lozenge lozenge-s picton">Navigation</div>
-                                 <h1>Navigation drawer</h1>
-                                 <p>Navigation drawers lets users navigate the entire content of a product or a section. These can be used for a single level or a multi-level navigation.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <div>
-                           <div class="tabset glo">
-                              
-                              <input type="radio" name="tabset" id="tab1" aria-controls="overview" checked>
-                              <label for="tab1">Overview</label>
-                              <!-- Tab 2 -->
-                              <input type="radio" name="tabset" id="tab2" aria-controls="breakdown">
-                              <label for="tab2">Breakdown</label>
-                              <!-- Tab 3 -->
-                              <input type="radio" name="tabset" id="tab3" aria-controls="options">
-                              <label for="tab3">Options</label>
-                              <!-- Tab 3 -->
-                              <input type="radio" name="tabset" id="tab4" aria-controls="responsive">
-                              <label for="tab4">Responsive</label>
-
-                              <div class="tab-panels">
-                                 <section id="overview" class="tab-panel">
-                                    <p>The navigation rail is a side navigation component that displays between 3 to 7 links. Each destination is represented by an icon and label text.</p>
-
-                                    <p>The rail can serve as the sole navigation component on larger screen sizes, such as desktop and tablet.</p>
-
-                                    <p>When your product is used on small screens, the navigation rail should be swapped for a navigation bar. When your product is used on desktop screens, the navigation rail can be swapped for a navigation drawer.</p>
-
-                                    <p>The navigation rail is placed on the leading edge of the screen; on the left side for left-to-right languages, and on the right side for right-to-left languages.</p>
-
-                                    <div class="ex ub-dspl_grid">
-                                       <h4>Default</h4>
-                                       <div class="ex">
-                                          <div class="box">
-                                             <div id="ova" class="primary btn btn-s picton">Open drawer</div>
-                                          </div>
-                                       </div>
-                                       <h4>Fixed</h4>
-                                       <div class="ex">
-                                          <div class="ex web web-a">
-                                             <div class="box-a">
-                                                <div class="dd-menu-ex navigational">
-                                                   <div class="mul">
-                                                      <div class="tp"><a href="" class="meta">My jobs</a></div>
-                                                      <a href="" class="chil">Current</a>
-                                                      <a href="" class="chil">Upcoming</a>
-                                                      <a href="" class="chil">Historic</a>
-                                                   </div>
-                                                   <div class="mul">
-                                                      <div class="tp"><a href="" class="meta">Support</a></div>
-                                                      <a href="" class="chil">Contact</a>
-                                                      <a href="" class="chil">FAQs</a>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-
-
-                                 </section>
-                                 <section id="intent" class="tab-panel">
-                                    
-                                 </section>
-                                 <section id="options" class="tab-panel">
-
-                                    <div class="ex ub-dspl_grid">
-                                       <div class="ex web web-a">
-                                          <div class="box-a">
-                                             <div class="dd-menu-ex navigational">
-                                                <a href="">Item 1</a>
-                                                <a href="">Item 2</a>
-                                                <a href="">Item 3</a>
-                                                <a href="">Item 4</a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="co">
-                                          <h4>Single level</h4>
-                                          <p>Use a single level navigation when you have a simple or flat navigation, without a hierarchy. Choosing a navigation item will select the item and take the user to the corresponding location</p>
-                                       </div>
-                                    </div>
-
-                                    <div class="ex ub-dspl_grid">
-                                       <div class="ex web web-a">
-                                          <div class="box-a">
-                                             <div class="dd-menu-ex navigational">
-                                                <div class="msection">
-                                                   <div class="meta sec">My jobs</div>
-                                                   <a href="">Current</a>
-                                                   <a href="">Upcoming</a>
-                                                   <a href="">Historic</a>
-                                                </div>
-                                                <div class="msection">
-                                                   <div class="meta sec">Support</div>
-                                                   <a href="">Contact</a>
-                                                   <a href="">FAQs</a>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="co">
-                                          <h4>Single level with groups</h4>
-                                          <p>Use a single level with group / section headers when you need to group navigation items into categories. This variant has the same behavior as the single-level side navigation, except that it has headers that aren’t interactive. If some items don’t fall into one of the existing categories, place them at the top of the drawer</p>
-                                       </div>
-                                    </div>
-
-
-                                    <div class="ex ub-dspl_grid">
-                                       <div class="ex web web-a">
-                                          <div class="box-a">
-                                             <div class="dd-menu-ex navigational">
-                                                <div class="mul">
-                                                   <div class="tp"><a href="">My jobs</a></div>
-                                                   <a href="" class="chil">Current</a>
-                                                   <a href="" class="chil">Upcoming</a>
-                                                   <a href="" class="chil">Historic</a>
-                                                </div>
-                                                <div class="mul">
-                                                   <div class="tp"><a href="">Support</a></div>
-                                                   <a href="" class="chil">Contact</a>
-                                                   <a href="" class="chil">FAQs</a>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="co">
-                                          <h4>Multi-level</h4>
-                                          <p>Use a multi-level navigation when you have multiple layers of hierarchical navigation. Clicking on a header opens or collapses the sub-level navigation items, and in some cases also sends the user to the top-level location</p>
-                                       </div>
-                                    </div>
-
-                                 </section>
-                                 <section id="reponsive" class="tab-panel">
-                                 	<h4>Mobile</h4p>
-                             	</section>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charSet="utf-8" />
+    <title>Move by AnyVan | Patterns | Navigation drawers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  </head>
+  <body>
+    <div id="__next">
+      <div>
+        <div class="ub-w_100vw ub-dspl_flex ub-flx-drct_column ub-min-h_100vh ub-box-szg_border-box">
+          <nav class="nav-main-system">
+            <div class="logo-box-main">
+              <img class="ub-w_100px ub-h_24px ub-crsr_pointer ub-box-szg_border-box" src="../image/AnyVan-move.svg" />
             </div>
-         </div>
+            <div class="primary-nav-system">
+              <a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box" href="../index.html" rel="noopener">Home</a>
+              <a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box" href="../foundations.html" rel="noopener">Foundations</a>
+              <a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box" href="../components.html" rel="noopener">Components</a>
+              <a class="css-b61p4k    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_3366FF ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box" href="../patterns.html" rel="noopener">Patterns</a>
+              <a class="css-12f72a9    ub-ltr-spc_-0-05px ub-fnt-fam_b77syt ub-color_696f8c ub-txt-deco_none ub-bblr_4px ub-bbrr_4px ub-btlr_4px ub-btrr_4px ub-tstn_jgs65e ub-mr_24px ub-box-szg_border-box" href="../resources.html" rel="noopener">Resources</a>
+            </div>
+          </nav>
+          <div class="ub-flx_1 ub-h_100prcnt ub-box-szg_border-box">
+            <div class="ub-w_100prcnt ub-dspl_grid ub-grd-tmp-col_1c86bs ub-box-szg_border-box">
+              <div class="sidebar-nav">
+                <h2>Patterns</h2>
+                <div role="tablist" class="ub-box-szg_border-box">
+                  <a tabindex="0" href="primary-nav.html" rel="noopener">Primary navigation</a>
+                  <a aria-current="page" tabindex="0" href="navigation-rail.html" rel="noopener">Navigation rail</a>
+                </div>
+              </div>
+              <div class="ub-w_100prcnt ub-dspl_flex ub-flx-drct_column ub-just-cnt_flex-start ub-pb_40px ub-pl_40px ub-pr_40px ub-pt_40px ub-max-w_1200px ub-box-szg_border-box">
+                <div class="ub-dspl_flex ub-w_100prcnt ub-just-cnt_space-between ub-flx-drct_column ub-algn-itms_flex-start ub-box-szg_border-box">
+                  <div class="ub-dspl_flex ub-w_100prcnt ub-just-cnt_space-between ub-mb_32px ub-box-szg_border-box">
+                    <div class="ub-box-szg_border-box">
+                      <div class="lozenge lozenge-s picton">Navigation</div>
+                      <h1>Navigation drawer</h1>
+                      <p>Navigation drawers lets users navigate the entire content of a product or a section. These can be used for a single level or a multi-level navigation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="tabset glo">
+                    <input type="radio" name="tabset" id="tab1" aria-controls="overview" checked>
+                    <label for="tab1">Overview</label>
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tabset" id="tab2" aria-controls="breakdown">
+                    <label for="tab2">Breakdown</label>
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tabset" id="tab3" aria-controls="options">
+                    <label for="tab3">Options</label>
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tabset" id="tab4" aria-controls="responsive">
+                    <label for="tab4">Responsive</label>
+                    <div class="tab-panels">
+                      <section id="overview" class="tab-panel">
+                        <section>
+                           <div id="ova" class="primary btn btn-s picton">Open drawer</div>
+                        </section>
+                        <section>
+                           <figure>
+                              <div class="inner alabaster">
+                                 <div class="uispacer">
+
+                                    <div class="dd-menu-ex navigational">
+                                     <div class="mul">
+                                       <div class="tp">
+                                         <a href="" class="meta">My jobs</a>
+                                       </div>
+                                       <a href="" class="chil">Current</a>
+                                       <a href="" class="chil">Upcoming</a>
+                                       <a href="" class="chil">Historic</a>
+                                     </div>
+                                     <div class="mul">
+                                       <div class="tp">
+                                         <a href="" class="meta">Support</a>
+                                       </div>
+                                       <a href="" class="chil">Contact</a>
+                                       <a href="" class="chil">FAQs</a>
+                                     </div>
+                                   </div>
+
+                                 </div>
+                              </div>
+                           </figure>
+                        </section>
+                      </section>
+                      <section id="intent" class="tab-panel"></section>
+                      <section id="options" class="tab-panel">
+                        <div class="ex ub-dspl_grid">
+                          <div class="ex web web-a">
+                            <div class="box-a">
+                              <div class="dd-menu-ex navigational">
+                                <a href="">Item 1</a>
+                                <a href="">Item 2</a>
+                                <a href="">Item 3</a>
+                                <a href="">Item 4</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="co">
+                            <h4>Single level</h4>
+                            <p>Use a single level navigation when you have a simple or flat navigation, without a hierarchy. Choosing a navigation item will select the item and take the user to the corresponding location</p>
+                          </div>
+                        </div>
+                        <div class="ex ub-dspl_grid">
+                          <div class="ex web web-a">
+                            <div class="box-a">
+                              <div class="dd-menu-ex navigational">
+                                <div class="msection">
+                                  <div class="meta sec">My jobs</div>
+                                  <a href="">Current</a>
+                                  <a href="">Upcoming</a>
+                                  <a href="">Historic</a>
+                                </div>
+                                <div class="msection">
+                                  <div class="meta sec">Support</div>
+                                  <a href="">Contact</a>
+                                  <a href="">FAQs</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="co">
+                            <h4>Single level with groups</h4>
+                            <p>Use a single level with group / section headers when you need to group navigation items into categories. This variant has the same behavior as the single-level side navigation, except that it has headers that aren’t interactive. If some items don’t fall into one of the existing categories, place them at the top of the drawer</p>
+                          </div>
+                        </div>
+                        <div class="ex ub-dspl_grid">
+                          <div class="ex web web-a">
+                            <div class="box-a">
+                              <div class="dd-menu-ex navigational">
+                                <div class="mul">
+                                  <div class="tp">
+                                    <a href="">My jobs</a>
+                                  </div>
+                                  <a href="" class="chil">Current</a>
+                                  <a href="" class="chil">Upcoming</a>
+                                  <a href="" class="chil">Historic</a>
+                                </div>
+                                <div class="mul">
+                                  <div class="tp">
+                                    <a href="">Support</a>
+                                  </div>
+                                  <a href="" class="chil">Contact</a>
+                                  <a href="" class="chil">FAQs</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="co">
+                            <h4>Multi-level</h4>
+                            <p>Use a multi-level navigation when you have multiple layers of hierarchical navigation. Clicking on a header opens or collapses the sub-level navigation items, and in some cases also sends the user to the top-level location</p>
+                          </div>
+                        </div>
+                      </section>
+                      <section id="reponsive" class="tab-panel">
+                        <h4>Mobile </h4p>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="navigation-drawer-ex dd-menu-ex navigational">
-         <a href="">Get a quote</a>
-         <a href="">Customers</a>
-         <a href="">Jobs</a>
-         <a href="">Journeys</a>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script type="text/javascript">
-         $( document ).ready(function() {
-            $("#ova").click (function(e){
-              e.stopPropagation();
-              $('.navigation-drawer-ex').toggleClass("open");
-            });
-         });
-      </script>
-   </body>
+    </div>
+    <div class="navigation-drawer-ex dd-menu-ex navigational">
+      <a href="">Get a quote</a>
+      <a href="">Customers</a>
+      <a href="">Jobs</a>
+      <a href="">Journeys</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#ova").click(function(e) {
+          e.stopPropagation();
+          $('.navigation-drawer-ex').toggleClass("open");
+        });
+      });
+    </script>
+  </body>
 </html>
