@@ -49,8 +49,8 @@
                     <input type="radio" name="tabset" id="tab1" aria-controls="overview" checked>
                     <label for="tab1">Overview</label>
                     <!-- Tab 2 -->
-                    <input type="radio" name="tabset" id="tab2" aria-controls="breakdown">
-                    <label for="tab2">Breakdown</label>
+                    <input type="radio" name="tabset" id="tab2" aria-controls="variations">
+                    <label for="tab2">Variations</label>
                     <!-- Tab 3 -->
                     <input type="radio" name="tabset" id="tab3" aria-controls="options">
                     <label for="tab3">Options</label>
@@ -60,26 +60,19 @@
                     <div class="tab-panels">
                       <section id="overview" class="tab-panel">
                         <section>
-                           <div id="ova" class="primary btn btn-s picton">Open drawer</div>
-                        </section>
-                        <section>
                            <figure>
                               <div class="inner alabaster">
                                  <div class="uispacer">
 
                                     <div class="dd-menu-ex navigational">
                                      <div class="mul">
-                                       <div class="tp">
-                                         <a href="" class="meta">My jobs</a>
-                                       </div>
+                                       <div class="meta sec">My jobs</div>
                                        <a href="" class="chil">Current</a>
                                        <a href="" class="chil">Upcoming</a>
                                        <a href="" class="chil">Historic</a>
                                      </div>
                                      <div class="mul">
-                                       <div class="tp">
-                                         <a href="" class="meta">Support</a>
-                                       </div>
+                                       <div class="meta sec">Support</div>
                                        <a href="" class="chil">Contact</a>
                                        <a href="" class="chil">FAQs</a>
                                      </div>
@@ -89,6 +82,13 @@
                               </div>
                            </figure>
                         </section>
+                        <section>
+                           <div id="ova" class="primary btn btn-s picton">Open drawer</div>
+                        </section>
+                      </section>
+                      <section id="variations" class="tab-panel">
+                        <h4>Default</h4>
+                        
                       </section>
                       <section id="intent" class="tab-panel"></section>
                       <section id="options" class="tab-panel">
@@ -172,10 +172,17 @@
       </div>
     </div>
     <div class="navigation-drawer-ex dd-menu-ex navigational">
-      <a href="">Get a quote</a>
-      <a href="">Customers</a>
-      <a href="">Jobs</a>
-      <a href="">Journeys</a>
+       <div class="mul">
+         <div class="meta sec">My jobs</div>
+         <a href="" class="chil">Current</a>
+         <a href="" class="chil">Upcoming</a>
+         <a href="" class="chil">Historic</a>
+       </div>
+       <div class="mul">
+         <div class="meta sec">Support</div>
+         <a href="" class="chil">Contact</a>
+         <a href="" class="chil">FAQs</a>
+       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript">
