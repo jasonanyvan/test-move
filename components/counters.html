@@ -77,14 +77,19 @@
                            <div class="tabset glo">
                               <input type="radio" name="tabset" id="tab1" aria-controls="overview" checked>
                               <label for="tab1">Overview</label>
-                              <input type="radio" name="tabset" id="tab2" aria-controls="usage">
+
+                              <input type="radio" name="tabset" id="tab2" aria-controls="sizing">
                               <label for="tab2">Size</label>
+
                               <input type="radio" name="tabset" id="tab3" aria-controls="specs">
                               <label for="tab3">Specs</label>
+
                               <input type="radio" name="tabset" id="tab4" aria-controls="usage">
                               <label for="tab4">Usage</label>
+
                               <input type="radio" name="tabset" id="tab5" aria-controls="related">
                               <label for="tab5">Related</label>
+
                               <div class="tab-panels">
                                  <section id="overview" class="tab-panel">
                                     <section>
@@ -108,23 +113,38 @@
                                        </figure>
                                     </section>
                                  </section>
-                                 <section id="intent" class="tab-panel">
-                                    <h4>Medium</h4>
-                                    <div class="ex">
-                                       <div class="box">
-                                          <div class="counter">99+</div>
-                                       </div>
-                                    </div>
-                                    <h4>Small</h4>
-                                    <div class="ex">
-                                       <div class="box">
-                                          <div class="counter-small">99+</div>
-                                       </div>
-                                    </div>
-                                 </section>
-                                 <section id="usage" class="tab-panel">
 
+                                 <section id="sizing" class="tab-panel">
+                                    <h4>Medium</h4>
+                                    <figure>
+                                      <div class="inner alabaster">
+                                        <div class="uispacer mobile">
+                                          <div class="counter">43</div>
+                                        </div>
+                                      </div>
+                                    </figure>
+
+                                    <h4>Small</h4>
+                                    <figure>
+                                      <div class="inner alabaster">
+                                          <div class="uispacer mobile">
+                                            <div class="counter-small">2</div>
+                                          </div>
+                                       </div>
+                                    </figure>
                                  </section>
+
+                                 <section id="usage" class="tab-panel">
+                                  <figure>
+                                      <div class="inner alabaster">
+                                          <div class="uispacer">
+                                            <h5>Drivers</h5>
+                                            <div class="counter picton">3</div>
+                                          </div>
+                                      </div>
+                                  </figure>
+                                 </section>
+                                 
                                  <section id="related" class="tab-panel">
                                     <p>For tallies or counts, use a counter</p>
                                     <p>To visually illustrate a status, use a lozenge</p>

@@ -21,6 +21,10 @@ figcaption {
   width: 13rem;
 }
 
+.skeleton {
+  background: orange;
+}
+
 .progress-circle:before {
   align-items: center;
   background: #F7F7F7;
@@ -350,7 +354,27 @@ figcaption {
   width: 100%;
 }
 
-.uispacer.mobile .app-bar, .uispacer.mobile .primary-bar {
+.list-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 + .list-table, h2 + .list-table, h3 + .list-table, h4 + .list-table, h5 + .list-table {
+  margin-top: 15px;
+}
+
+.list-table > span {
+  flex: 50%;
+  font-size: 0.889rem;
+  padding: 12px 0;
+  text-align: left;
+}
+
+.list-table.stroke > span {
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.uispacer.mobile .app-bar, .uispacer.mobile .primary-bar, .uispacer.mobile .skeleton {
   width: 375px;
   padding: 12px 15px;
 }
@@ -901,11 +925,23 @@ figure.flat {
   height: 0 !important;
 }
 
-.tab-panel p {
+.tab-panel p, .tab-panel ul, .tab-panel li {
   font-size: 0.889rem;
 }
 
+.tab-panel ul {
+  margin-top: 15px;
+}
+
+.tab-panel li:not(:last-of-type) {
+  margin-bottom: 21px;
+}
+
 figure + .pseudofigcaption {
+  margin-top: 15px;
+}
+
+figure + .pseudofigcaption:not(:last-of-type) {
   margin-bottom: 60px;
 }
 
@@ -1879,12 +1915,7 @@ a.card:hover {
 
 .nav-rail a img {
   text-align: center;
-  height: 24px;
-}
-
-.nav-rail a img {
-  text-align: center;
-  height: 24px;
+  height: 32px;
 }
 
 .ex.ub-dspl_grid {
@@ -1913,6 +1944,14 @@ align-items: center;
 
 .nav-rail a .icon path {
   fill: white;
+} 
+
+figure *:hover {
+  transition: all 190ms cubic-bezier(0.5, 0, 1, 1);
+}
+
+figure * {
+  transition: all 190ms cubic-bezier(0.5, 0, 1, 1);
 }
 
 .nav-rail a.active, .nav-rail a:hover, nav.topnav a.active, nav.topnav a:hover {
@@ -2880,7 +2919,7 @@ h4 + table, h3 + table, h5 + table {
 }
 
 tr {
-    border-bottom: 1px solid #292929;
+    border-bottom: 1px solid #D8D8D8;
 }
 
 thead > tr > th {
@@ -3052,19 +3091,27 @@ p + table {
 }
 
 .lozenge.lozenge-m {
-    padding: 0px 15px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14.22px;
-    line-height: 24px;
+  padding: 0 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.889rem;
+  line-height: 27px;
 }
 
 .lozenge.lozenge-s {
-    padding: 0px 10px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12.64px;
-    line-height: 23px;
+  padding: 0 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.79rem;
+  line-height: 21px;
+}
+
+.lozenge.lozenge-mi {
+  padding: 0 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.702rem;
+  line-height: 19px;
 }
 
 .lozenge + .lozenge {
@@ -3684,7 +3731,7 @@ h4:last-of-type + .ex {
   margin-bottom: 0;
 }
 
-.card.image-card .image, .swatch {
+.card.image-card .image, .swatch, .skeleton {
   overflow: hidden;
   height: 0;
   position: relative;
@@ -3878,6 +3925,44 @@ h4:last-of-type + .ex {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
+  height: 100%;
+  padding: 30px;
+  position: relative;
+  border: 1px solid #D8D8D8;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+figure.empty svg {
+  width: 165px;
+}
+
+figure.empty path, figure.empty line, figure.empty polygon {
+  fill: none;
+  stroke: #292929;
+  stroke-width: 1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit: 10;
+}
+
+figure.empty.minimal path, figure.empty.minimal line, figure.empty.minimal polygon {
+  fill: none;
+  stroke: #292929;
+  stroke-width: 3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit: 10;
+}
+
+.uispacer-page-c {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 30px;
   position: relative;
@@ -4103,7 +4188,35 @@ p .btn.text {
     display: flex;
 }
 
-.ex:not(:last-of-type) {
+.pagefourempty h1, .pagefourempty p {
+  color: white;
+}
+
+.empty p, .pagefourempty p {
+  font-size: 1rem;
+}
+
+.pagefourempty {
+  position: relative;
+}
+
+.pagefourempty:after {
+  content: "";
+  background: rgba(41,41,41,0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pagefourempty .uispacer-page-c {
+  position: relative;
+  z-index: 10;
+}
+
+.ex:not(:last-of-type), figure + figure:not(:last-of-type) {
   margin-bottom: 60px;
 }
 
@@ -4349,7 +4462,6 @@ p .btn.text {
   width: 100%;
 }
 
-
 .static-tile-group .input-container {
   position: relative;
   width: calc((100% / 4) - 12px);
@@ -4366,7 +4478,7 @@ p .btn.text {
 .static-tile-group .input-container path, .static-tile-group .input-container circle, .static-tile-group .input-container line {
   fill:none;
   stroke:#41A5DD;
-  stroke-width:3;
+  stroke-width: 2.5;
   stroke-linecap:round;
   stroke-linejoin:round;
   stroke-miterlimit:10;
@@ -4379,9 +4491,37 @@ p .btn.text {
   border-radius: 6px;
   padding: 30px;
   background: white;
+  position: relative;
 }
 
-.radio-tile-group .input-container:after {
+.main-grid.static-tile-group .input-container .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-grid.static-tile-group .input-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.main-grid.static-tile-group .input-container h5 {
+  color: white;
+}
+
+.main-grid.static-tile-group .input-container path, .main-grid.static-tile-group .input-container line {
+  stroke: #FFFFFF;
+}
+
+.radio-tile-group .input-container:after, .main-grid.static-tile-group .input-container:after {
   content: "";
   display: block;
   padding-bottom: 100%;
@@ -4415,9 +4555,13 @@ p .btn.text {
   margin-top: 9px;
 }
 
-.radio-tile-group .input-container:not(.disabled) .radio-button:checked + .radio-tile {
+.radio-tile-group .input-container:not(.disabled) .radio-button:checked + .radio-tile, .radio-tile-group .input-container:not(.disabled) .radio-button:hover + .radio-tile {
   background-color: #41A5DD;
   border: 2px solid #41A5DD;
+}
+
+
+.radio-tile-group .input-container:not(.disabled) .radio-button:checked + .radio-tile p, .radio-tile-group .input-container:not(.disabled) .radio-button:hover + .radio-tile p, .radio-tile-group .input-container:not(.disabled) .radio-button:checked + .radio-tile label, .radio-tile-group .input-container:not(.disabled) .radio-button:hover + .radio-tile label {
   color: white;
 }
 

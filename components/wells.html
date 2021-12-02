@@ -82,8 +82,13 @@
                     <label for="tab1">Overview</label>
                     <input type="radio" name="tabset" id="tab2" aria-controls="variations">
                     <label for="tab2">Variations</label>
-                    <input type="radio" name="tabset" id="tab3" aria-controls="current">
-                    <label for="tab3">Current</label>
+
+                    <input type="radio" name="tabset" id="tab3" aria-controls="variations">
+                    <label for="tab3">Usage</label>
+
+                    <input type="radio" name="tabset" id="tab4" aria-controls="current">
+                    <label for="tab4">Current</label>
+
                     <div class="tab-panels">
                       <section id="overview" class="tab-panel">
                         <section>
@@ -131,7 +136,7 @@
                           </figure>
                         </section>
                       </section>
-                      <section id="current" class="tab-panel">
+                      <section id="variations" class="tab-panel">
                         <section>
                           <h4>Grouped</h4>
                           <figure>
@@ -153,6 +158,35 @@
                           </figure>
                         </section>
                       </section>
+
+                      <section id="usage" class="tab-panel">
+                        <figure>
+                            <div class="inner alabaster">
+                              <div class="uispacer mobile">
+                                <div class="well-group">
+                                  <div class="body">
+                                    <h5>Basic information</h5>
+                                    <div class="list-table two">
+                                      <span>Registered at</span>
+                                      <span>25 July 2017 at 13:42</span>
+                                      <span>Last login</span>
+                                      <span>N/A</span>
+                                      <span>Active jobs</span>
+                                      <span>N/A</span>
+                                      <span>Completed jobs</span>
+                                      <span>N/A</span>
+                                    </div>
+                                  </div>
+                                  <div class="body">
+                                    <h5>IP addresses</h5>
+                                    <p>This user has yet to log in</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </figure>
+                      </section>
+
                       <section id="current" class="tab-panel">
                         <img class="deleteme" src="../image/delete-wells/Screenshot 2021-11-23 at 14.24.54.png">
                       </section>
