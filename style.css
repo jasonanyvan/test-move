@@ -1757,7 +1757,7 @@ strong {
   overflow: hidden;
   background: #006091;
   display: flex;
-  padding: 30px 12px;
+  padding: 30px 9px;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -1813,7 +1813,7 @@ p a {
   margin-bottom: 30px !important;
   box-shadow: 0px 8px 12px 6px rgba(41, 41, 41, 0.15), 0px 4px 4px rgba(41, 41, 41, 0.3);
   background: #FFD8E4;
-  border-radius: 15px;
+  border-radius: 15px !important;
   background: #BC3823;
 }
 
