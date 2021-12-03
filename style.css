@@ -951,6 +951,8 @@ figure + .pseudofigcaption:not(:last-of-type) {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 .app-bar .l {
@@ -1010,6 +1012,19 @@ figure + .pseudofigcaption:not(:last-of-type) {
   align-items: center;
   border-bottom: 1px solid #D8D8D8;
   margin-bottom: 30px;
+}
+
+.app-bar.search input {
+  border: none;
+  background: none;
+}
+
+.app-bar.search .r .nicon {
+  position: absolute;
+}
+
+.app-bar.search .r input {
+  padding-left: 53px;
 }
 
 .primary-bar {
@@ -1813,7 +1828,6 @@ p a {
   position: relative;
   box-shadow: 0px 8px 12px 6px rgba(41, 41, 41, 0.15), 0px 4px 4px rgba(41, 41, 41, 0.3);
   border-radius: 15px !important;
-  background: #BC3823;
 }
 
 .nav-rail .overflow {
@@ -4743,8 +4757,7 @@ input[type="month"], input[type="number"], input[type="text"], input[type="time"
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 1rem;
 }
 
 .val {
