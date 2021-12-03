@@ -4592,12 +4592,8 @@ p .btn.text {
     height: 100%;
 }
 
-.main-grid.static-tile-group .input-container h5 {
-  color: white;
-}
-
-.main-grid.static-tile-group .input-container path, .main-grid.static-tile-group .input-container line {
-  stroke: #FFFFFF;
+.radio-tile-group .input-container.ige .radio-tile path, .radio-tile-group .input-container.ige .radio-tile line {
+  fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;
 }
 
 .radio-tile-group .input-container:after, .main-grid.static-tile-group .input-container:after {
