@@ -895,11 +895,11 @@ footer {
   font-size: 1.125rem;
 }
 
-.primary-bar.picton line {
+.primary-bar.picton line, .primary-bar.bahama line {
   stroke: #FFFFFF;
 }
 
-.primary-bar.picton path {
+.primary-bar.bahama path {
   fill: white;
 }
 
@@ -3547,6 +3547,10 @@ p + table {
 
 .picton {
   background: #41A5DD;
+}
+
+.flame {
+  background: #EB6534;
 }
 
 .picton circle {
