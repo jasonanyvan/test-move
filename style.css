@@ -561,13 +561,10 @@ footer {
 }
 
 .swatch-card {
+  margin-top: 15px;
+  padding-top: 15px;
   position: relative;
-  background: #FFFFFF;
-  border-radius: 6px;
   width: 100%;
-  overflow: hidden;
-  border: 1px solid #D8D8D8;
-  overflow: hidden;
   grid-column: span 4 / auto;
 }
 
@@ -634,12 +631,20 @@ footer {
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
+    border: 1px solid #D8D8D8 !important;
     text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.swatch-card h5 {
+  margin-bottom: 15px;
+  font-size: 1.125rem;
 }
 
 .swatch-colour-card.white {
   background: white !important;
-  border: none !important;
 }
 
 .swatch-content {
@@ -3622,10 +3627,6 @@ p + table {
 
 .vermillion {
   background: #DB3A34;
-}
-
-.biscay {
-  background: #1E4C71;
 }
 
 .punch {
