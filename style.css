@@ -21,6 +21,21 @@ figcaption {
   width: 13rem;
 }
 
+.htext {
+  font-size: 0.624rem;
+  margin-top: 5px;
+  font-weight: 500;
+  color: #909090;
+}
+
+label.la {
+  font-weight: 600;
+  font-size: 0.889rem;
+  letter-spacing: 0.3px;
+  color: #292929;
+  margin-bottom: 9px !important;
+}
+
 .skeleton {
   background: orange;
 }
@@ -387,7 +402,7 @@ h1 + .list-table, h2 + .list-table, h3 + .list-table, h4 + .list-table, h5 + .li
   background: #a9da73;
 }
 
-.toggle {
+.toggle, .slide-toggle {
   display: flex;
   overflow: hidden;
 }
@@ -660,6 +675,66 @@ footer {
 
 .drawer:not(:last-of-type) {
   border-bottom: 1px solid #D8D8D8;
+}
+
+.slide-toggle {
+  width: 179px;
+  height: 49px;
+}
+
+.slide-toggle input {
+  display: none;
+}
+
+.slide-toggle input + label {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-toggle input + label > .status-switch {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-size: 0.889rem;
+  position: relative;
+  background: white;
+  color: #292929;
+  transition: all 0.5s ease;
+  padding: 3px;
+  border: 1px solid #D8D8D8;
+  border-radius: 6px;
+}
+.slide-toggle input + label > .status-switch:before, .slide-toggle input + label > .status-switch:after {
+  border-radius: 6px;
+  height: calc(100% - 6px);
+  width: calc(50% - 3px);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.slide-toggle input + label > .status-switch:before {
+  background: #41A5DD;
+  color: #ffffff;
+  left: 6px;
+  z-index: 10;
+  content: attr(data-unchecked);
+}
+.slide-toggle input + label > .status-switch:after {
+  right: 0;
+  content: attr(data-checked);
+}
+
+.slide-toggle input:checked + label > .status-switch:after {
+  left: 0;
+  content: attr(data-unchecked);
+}
+
+.slide-toggle input:checked + label > .status-switch:before {
+  color: #FFFFFF;
+  left: 50%;
+  content: attr(data-checked);
 }
 
 .drawer .content {
@@ -4448,14 +4523,54 @@ p .btn.text {
 }
 
 /* PLACEHOLDER TEXT */ 
-::placeholder, :-ms-input-placeholder, ::-ms-input-placeholder { 
-    color: lime;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1rem;
-    align-items: center;
-    letter-spacing: 0.3px;
+::placeholder {
+  color: #BCBCBC;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+
+::-webkit-input-placeholder {
+  color: #BCBCBC;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+
+::-moz-placeholder {
+  color: #BCBCBC;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+
+:-ms-input-placeholder {
+  color: #BCBCBC;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+
+::-ms-input-placeholder {
+  color: #BCBCBC;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  align-items: center;
+  letter-spacing: 0.3px;
 }
 
 .radio-tile-group {
