@@ -21,10 +21,42 @@ figcaption {
   width: 13rem;
 }
 
+.error-message-fail input {
+  border-color: #F74F64 !important;
+}
+
+.error-message-fail .error-message {
+  color: #F74F64 !important;
+}
+
+.error-message-warning input {
+  border-color: #FFA233 !important;
+}
+
+.error-message-warning .error-message {
+  color: #FFA233 !important;
+}
+
+.error-message-success input {
+  border-color: #70C216 !important;
+}
+
+.error-message-success .error-message {
+  color: #70C216 !important;
+}
+
 .htext {
-  font-size: 0.624rem;
-  margin-top: 5px;
   font-weight: 500;
+}
+
+.error-message {
+  font-weight: 600;
+}
+
+.htext, .error-message {
+  letter-spacing: 0.3px;
+  font-size: 0.79rem !important;
+  margin-top: 10px;
   color: #909090;
 }
 
